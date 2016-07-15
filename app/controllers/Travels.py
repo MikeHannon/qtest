@@ -1,9 +1,9 @@
 from system.core.controller import *
 from flask import Flask, flash, session
 
-class Travel(Controller):
+class Travels(Controller):
     def __init__(self, action):
-        super(Travel, self).__init__(action)
+        super(Travels, self).__init__(action)
         self.load_model('Travel')
         # self.db = self._app.db
 
