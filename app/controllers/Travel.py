@@ -27,7 +27,7 @@ class Travel(Controller):
             # return redirect('/dashboard')
         else:
             # return self.load_view('addplan.html')
-            return redirect('/dashboard')
+            return redirect('dashboard')
 
     def dashboard(self):
         mytrips = self.models['Travel'].my_trip()
@@ -57,4 +57,4 @@ class Travel(Controller):
         print ('/' * 25)
         print join_trip
         print ('/' * 25)
-        return redirect('/dashboard')
+        return redirect('dashboard')

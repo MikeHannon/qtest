@@ -28,7 +28,7 @@ class Users(Controller):
             return redirect('/')
         else:
             # print users
-            # #accessing the dicitionary value 
+            # #accessing the dicitionary value
             # print users['users']['id']
             #adding the user name and id into session that will be used for applications
             session['id']= users['users']['id']
@@ -37,7 +37,7 @@ class Users(Controller):
             # print 'I am seesion id ', session['id']
             # print 'I am session name', session['name']
             # return self.load_view('dashboard.html', users=users['users'])
-            return redirect('/dashboard')
+            return redirect('dashboard')
 
     def dashboard(self):
             return self.load_view('dashboard.html')
@@ -68,4 +68,3 @@ class Users(Controller):
             #In this version I return a flash message letting the user know the registration was successful
             flash('Succesfully registered please login')
             return redirect('/')
-
